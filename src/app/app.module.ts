@@ -5,25 +5,27 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './component/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule } from "@angular/material/card";
-import { MatGridListModule } from "@angular/material/grid-list";
-import { MatListModule } from "@angular/material/list";
-import { MatDividerModule } from "@angular/material/divider";
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { HttpClientModule } from '@angular/common/http';
+import { MatCardModule } from '@angular/material/card';
+import { MatExpansionModule } from "@angular/material/expansion";
+import { FormProdutoComponent } from './component/form-produto/form-produto.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    FormProdutoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatToolbarModule,
     MatCardModule,
-    MatGridListModule,
-    MatListModule,
-    MatDividerModule,
+    MatExpansionModule,
+    MatButtonModule,
     HttpClientModule
   ],
   providers: [],
