@@ -11,12 +11,15 @@ import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from "@angular/material/expansion";
 import { FormProdutoComponent } from './component/form-produto/form-produto.component';
 import { MatButtonModule } from '@angular/material/button';
+import { TabelaProdutosComponent } from './component/tabela-produtos/tabela-produtos.component';
+import { MatTableModule } from "@angular/material/table";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    FormProdutoComponent
+    FormProdutoComponent,
+    TabelaProdutosComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +29,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatCardModule,
     MatExpansionModule,
     MatButtonModule,
+    MatTableModule,
     HttpClientModule
   ],
   providers: [],
