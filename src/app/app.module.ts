@@ -13,13 +13,15 @@ import { FormProdutoComponent } from './component/form-produto/form-produto.comp
 import { MatButtonModule } from '@angular/material/button';
 import { TabelaProdutosComponent } from './component/tabela-produtos/tabela-produtos.component';
 import { MatTableModule } from "@angular/material/table";
+import { MonetarioPipe } from './pipe/monetario.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     FormProdutoComponent,
-    TabelaProdutosComponent
+    TabelaProdutosComponent,
+    MonetarioPipe
   ],
   imports: [
     BrowserModule,
