@@ -14,6 +14,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { TabelaProdutosComponent } from './component/tabela-produtos/tabela-produtos.component';
 import { MatTableModule } from "@angular/material/table";
 import { MonetarioPipe } from './pipe/monetario.pipe';
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from "@angular/material/form-field";
+import { MatInputModule } from "@angular/material/input";
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -32,9 +36,14 @@ import { MonetarioPipe } from './pipe/monetario.pipe';
     MatExpansionModule,
     MatButtonModule,
     MatTableModule,
-    HttpClientModule
+    MatFormFieldModule,
+    MatInputModule,
+    HttpClientModule,
+    MatDividerModule
   ],
-  providers: [],
+  providers: [
+    {provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: {appearance: 'outline'}}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

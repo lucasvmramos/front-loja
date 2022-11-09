@@ -1,12 +1,34 @@
-<p>form-produto works!</p>
 <mat-card>
     <mat-card-header>
         <mat-card-title>Cadastro de produto</mat-card-title>
     </mat-card-header>
+    <mat-divider></mat-divider>
     <mat-card-content>
-        content
+        <div class="form">
+            <p>
+                <mat-form-field>
+                    <mat-label>Nome</mat-label>
+                    <input matInput placeholder="meu produtinho">
+                    <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field>
+                    <mat-label>Descrição</mat-label>
+                    <input matInput placeholder="">
+                    <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field>
+                    <mat-label>Valor</mat-label>
+                    <input matInput placeholder="meu produtinho">
+                    <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                </mat-form-field>
+            </p>
+        </div>
     </mat-card-content>
     <mat-card-actions>
         <button routerLink="" mat-button>voltar</button>
-        </mat-card-actions>
+    </mat-card-actions>
 </mat-card>
